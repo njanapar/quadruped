@@ -42,17 +42,17 @@ This project introduces a simple gesture control system for a robot. It focuses 
 
 - **Create Gesture-Control Map**  
   
-  - **Due Date:** March 10  
+  - **Due Date:** March 17  
   - **Tasks:** Define and map gestures (e.g., raised hand = move forward, arm out = turn).
 
 - **Write Robot Movement Algorithms**  
    
-  - **Due Date:** March 15  
+  - **Due Date:** march 28
   - **Tasks:** Implement algorithms to map gestures to robot movements.
 
 - **Test Robot Movement in Gazebo**  
   
-  - **Due Date:** March 20  
+  - **Due Date:** april 1 
   - **Tasks:** Test the robot's response to gestures and refine the control algorithms.
 
 - **Create Progress Report**  
