@@ -77,7 +77,7 @@ This project introduces a simple gesture control system for a robot. It focuses 
 - A classmate should be able to follow the instructions in the README and successfully run the simulation without assistance.
 
 
-
+# **MidTerm project review
 # **Quadruped Robot Gesture Control in Gazebo with ROS2**  
 
 ## **Overview**  
