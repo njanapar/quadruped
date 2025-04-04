@@ -75,3 +75,61 @@ This project introduces a simple gesture control system for a robot. It focuses 
 - The robot should respond accurately to specific gestures (e.g., raising a hand moves the robot forward).
 - The robot should function smoothly in the Gazebo environment with gesture-based control.
 - A classmate should be able to follow the instructions in the README and successfully run the simulation without assistance.
+
+
+
+# **Quadruped Robot Gesture Control in Gazebo with ROS2**  
+
+## **Overview**  
+This project aims to design and simulate a quadruped-like robot in **Gazebo** using **ROS2**, controlled via **full-body gestures** (arms, legs, and elbow joints). The robot’s movements will be dictated by predefined gestures, offering a **hands-free and interactive control system**.  
+
+## **Project Objective**  
+- Simulate a **quadruped robot** in Gazebo using ROS2.  
+- Enable basic movement control using a controller.  
+- Implement **gesture-based control** for the quadruped robot, allowing it to respond to human gestures in real-time.  
+- Establish seamless communication between **ROS2 and Gazebo** for controlling the robot’s movement.  
+
+## **Current Progress**  
+**Quadruped Robot Simulation:** Successfully simulated a quadruped robot in **Gazebo Harmonic** with **ROS2 Jazzy**.  
+**Basic Control Implementation:** The robot can be minimally controlled using a Python-based GUI controller.  
+**Gesture Control System:** Developed a gesture-based control system for a **four-wheeled robot** in **Gazebo**.  
+**ROS-Gazebo Communication:** Integrated `ros_gz_bridge` for data exchange between **ROS2** and **Gazebo**.  
+
+## **Upcoming Tasks**  
+Improve the movement and control of the quadruped robot.  
+Integrate the gesture control system with the quadruped robot.  
+
+## **Project Implementation**  
+
+### **1. Environment Setup**  
+- Installed **ROS2 Jazzy** and **Gazebo Harmonic**.  
+- Created a ROS2 workspace for the simulation.  
+- Set up a **custom environment** in Gazebo for robot navigation.  
+
+### **2. Robot Simulation & Control**  
+- Loaded **URDF files** into Gazebo using ROS2.  
+- Configured **ROS2 controllers** within URDF and ROS launch files.  
+- Used `ros_gz_bridge` for communication between **Gazebo** and **ROS2**.  
+- Developed a **Python-based GUI controller** for manual control of the quadruped robot.  
+
+### **3. Gesture Control System**  
+- Defined a **gesture-to-movement mapping** for controlling the robot.  
+- Implemented a **gesture recognition system** (currently tested on a four-wheeled robot in Gazebo).  
+- Created a **ROS2 node** to interpret gesture inputs and translate them into robot commands.  
+
+### **4. Gesture-to-Movement Mapping**  
+| **Gesture**           | **Action**           |  
+|-----------------------|---------------------|  
+| Right hand up        | Move forward        |  
+| Left hand up         | Move backward       |  
+| Both hands up/down   | Stop                |  
+| Right hand bent      | Turn right          |  
+| Left hand bent       | Turn left           |  
+
+## **Technologies & Tools Used**  
+- **ROS2 Jazzy** – Robot Operating System for control and simulation.  
+- **Gazebo Harmonic** – Simulation environment for the quadruped robot.  
+- **Python** – Implementing gesture recognition and GUI control.  
+- **ros_gz_bridge** – Communication between ROS2 and Gazebo.  
+- **URDF/Xacro** – Defining the robot model and control mechanisms.  
+
