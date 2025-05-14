@@ -1,76 +1,85 @@
 # Gesture-Controlled Quadruped in Gazebo with ROS2
 
-## Team Members:
-
-- Nageswara Rao Janapareddy ,njanapar@buffalo.edu
+## Team Members
+- Nageswara Rao Janapareddy, njanapar@buffalo.edu
 
 ## Project Objective
-The goal of this project is to design and simulate a Quadruped-like robot in Gazebo using ROS2, which can be controlled using full-body gestures (arms and elbow joints). The robot will be controlled by specific gestures.
+This project aims to design and simulate a quadruped robot, inspired by Boston Dynamics' Spot, in Gazebo using ROS2. The robot is controlled using full-body gestures (focusing on arm and elbow joint movements) detected via MediaPipe. The system translates specific human gestures into robot movements, providing an interactive and intuitive control interface.
 
 ## Contributions
-This project introduces a simple gesture control system for a robot. It focuses entirely on translating specific human gestures into robot movements. The system will offer a hands-on, interactive way to control the robot using full-body gestures.
+This project introduces a novel gesture-based control system for a quadruped robot, emphasizing:
+- A URDF-based robot model with 12 degrees of freedom (3 joints per leg).
+- Gait controllers for walking, crawling, and standing.
+- Real-time teleoperation using gesture recognition powered by MediaPipe.
+- A hands-on demonstration of controlling a Spot-like quadruped in a simulated Gazebo environment.
 
-Controlling legged robots like Boston Dynamics' Spot is both a challenging and fascinating robotics problem. This project demonstrates how to simulate a Spot-like quadruped in Gazebo and control it using ROS 2. It includes:
-
-  URDF-based robot model with 12 DOF (3 joints per leg).
-
-  Gait controllers for walking, crawling, and standing.
-
-  Teleoperation via gesture control (MediaPipe).
+The project tackles the challenging problem of legged robot control, offering a foundation for further research in human-robot interaction and robotic locomotion.
 
 ## Demonstration
+Below are screenshots of the quadruped simulation in Gazebo:
 
-![alt text](https://github.com/[njanapar]/[quadruped]/blob/[main]/sim1.jpg?raw=true)
-![alt text](https://github.com/[njanapar]/[quadruped]/blob/[main]/sim2.jpg?raw=true)
-![alt text](https://github.com/[njanapar]/[quadruped]/blob/[main]/sim3.jpg?raw=true)
+![Simulation 1](https://github.com/njanapar/quadruped/blob/main/sim1.jpg?raw=true)
+![Simulation 2](https://github.com/njanapar/quadruped/blob/main/sim2.jpg?raw=true)
+![Simulation 3](https://github.com/njanapar/quadruped/blob/main/sim3.jpg?raw=true)
+
+*Note: Update the GitHub username (`njanapar`) and repository name (`quadruped`) in the image URLs if they differ.*
 
 ## Installation Instructions
+This project is tested with **ROS2 Jazzy** and **Gazebo Harmonic**. Follow these steps to set up the environment:
 
-This project is tested in ROS 2 Jazzy and Gazebo Harmonic. The installation links for both of them are provided below
-
-    1. https://docs.ros.org/en/jazzy/Installation.html
-    2. https://gazebosim.org/docs/latest/ros_installation/
-
-And other important packages required are provided in requirements.txt file and can be installed using following command line
-
-    pip install -r requirements.txt
-
+1. Install ROS2 Jazzy: [Official ROS2 Installation Guide](https://docs.ros.org/en/jazzy/Installation.html)
+2. Install Gazebo Harmonic: [Gazebo ROS Installation Guide](https://gazebosim.org/docs/latest/ros_installation/)
+3. Install required Python packages:
+   ```bash
+   pip install -r requirements.txt
 
 ## How to Run the Code
+1. Clone the repository to your home directory:
+   ```bash
+   git clone https://github.com/njanapar/quadruped.git
 
-Clone this repository into your home folder. And then build the workspace using following command and source it
 
-    
-    ```
-    colcon build
-    source install/setup.bash
-    ```
+2.Build the workspace 
+   Clone the repository and navigate to the project directory. Then, build the workspace with the following commands:
 
-    And then we can launch file required to launch the simulation and start the controllers:
+   ```bash
+   colcon build
+   source install/setup.bash
+  ```
 
-    ```
-    ros2 launch spot_control description.launch.py
-    ```
 
-    Then we need to run the file required to control the robot using gestures in another terminal:
-    ```
-    ros2 run spotrobot_control test_joy.py
-    ```
+3. Launch the Simulation and Start the Controllers
 
+After the workspace is built, launch the simulation and the necessary controllers:
+
+```bash
+ros2 launch spot_control description.launch.py
+```
+
+4. Run the Gesture Control
+
+Open another terminal and run the gesture control file to start controlling the robot with gestures:
+
+```bash
+ros2 run spotrobot_control test_joy.py
+```
 ## References:
-```
-M. H. Zafar, E. F. Langås and F. Sanfilippo, "Real-Time Gesture-Based Control of a Quadruped Robot Using a Stacked Convolutional Bi-Long Short-Term Memory    (Bi-LSTM) Neural Network," 2024 10th International Conference on Automation, Robotics and Applications (ICARA), Athens, Greece, 2024, pp. 81-86, doi: 10.1109/ICARA60736.2024.10553163.
-https://medium.com/swlh/training-a-spot-inspired-quadruped-robot-using-reinforcement-learning-678b9e5df164
-B. Ozkaynak and B. Ugurlu, "Preview Control-based Jumping and Spot-Jogging Trajectory Generation for Quadruped Robots," 2023 IEEE 21st International Conference on Industrial Informatics (INDIN), Lemgo, Germany, 2023, pp. 1-6, doi: 10.1109/INDIN51400.2023.10217866.
-https://github.com/OpenQuadruped/spot_mini_mini
-https://github.com/curieuxjy/Awesome_Quadrupedal_Robots
-https://docs.ros.org/en/jazzy/p/ros_gz_bridge/
-https://docs.ros.org/en/jazzy/Tutorials/Advanced/Simulators/Gazebo/Gazebo.html
-https://github.com/ros-controls/ros2_controllers
-```
 
-## Future Work:
+1. M. H. Zafar, E. F. Langås, and F. Sanfilippo, "Real-Time Gesture-Based Control of a Quadruped Robot Using a Stacked Convolutional Bi-Long Short-Term Memory (Bi-LSTM) Neural Network," 2024 10th International Conference on Automation, Robotics and Applications (ICARA), Athens, Greece, 2024, pp. 81-86, doi: [10.1109/ICARA60736.2024.10553163](https://doi.org/10.1109/ICARA60736.2024.10553163).
 
+2. [Training a Spot-inspired Quadruped Robot Using Reinforcement Learning](https://medium.com/swlh/training-a-spot-inspired-quadruped-robot-using-reinforcement-learning-678b9e5df164)
+
+3. B. Ozkaynak and B. Ugurlu, "Preview Control-based Jumping and Spot-Jogging Trajectory Generation for Quadruped Robots," 2023 IEEE 21st International Conference on Industrial Informatics (INDIN), Lemgo, Germany, 2023, pp. 1-6, doi: [10.1109/INDIN51400.2023.10217866](https://doi.org/10.1109/INDIN51400.2023.10217866).
+
+4. [OpenQuadruped GitHub Repository](https://github.com/OpenQuadruped/spot_mini_mini)
+
+5. [Awesome Quadrupedal Robots GitHub Repository](https://github.com/curieuxjy/Awesome_Quadrupedal_Robots)
+
+6. [ROS-Gazebo Bridge Documentation](https://docs.ros.org/en/jazzy/p/ros_gz_bridge/)
+
+7. [ROS2 Gazebo Tutorial](https://docs.ros.org/en/jazzy/Tutorials/Advanced/Simulators/Gazebo/Gazebo.html)
+
+8. [ROS2 Controllers Documentation](https://github.com/ros-controls/ros2_controllers)
 
 
 
