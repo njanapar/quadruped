@@ -27,6 +27,10 @@ Below are screenshots of the quadruped simulation in Gazebo:
 
 *Note: Update the GitHub username (`njanapar`) and repository name (`quadruped`) in the image URLs if they differ.*
 
+### Project Explanation
+
+You can watch the detailed explanation of the project on [YouTube](https://youtu.be/puTWiiMsdBg).
+
 ## Installation Instructions
 This project is tested with **ROS2 Jazzy** and **Gazebo Harmonic**. Follow these steps to set up the environment:
 
@@ -102,7 +106,5 @@ I will also focus on improving **footstep planning** by dynamically adjusting fo
 
 Additionally, I will integrate **feedback loops** from onboard sensors to allow real-time adjustments based on environmental conditions, ensuring stable movement across varying terrains.
 
-### Project Explanation
 
-You can watch the detailed explanation of the project on [YouTube](https://youtu.be/puTWiiMsdBg).
 
