@@ -18,9 +18,12 @@ The project tackles the challenging problem of legged robot control, offering a 
 ## Demonstration
 Below are screenshots of the quadruped simulation in Gazebo:
 
-![Simulation 1](https://github.com/njanapar/quadruped/blob/main/sim1.jpg?raw=true)
-![Simulation 2](https://github.com/njanapar/quadruped/blob/main/sim2.jpg?raw=true)
-![Simulation 3](https://github.com/njanapar/quadruped/blob/main/sim3.jpg?raw=true)
+
+
+![Simulation 1](https://github.com/njanapar/quadruped/blob/main/imgs/sim1.png?raw=true)
+![Simulation 2](https://github.com/njanapar/quadruped/blob/main/imgs/sim2.png?raw=true)
+![Simulation 3](https://github.com/njanapar/quadruped/blob/main/imgs/sim3.png?raw=true)
+
 
 *Note: Update the GitHub username (`njanapar`) and repository name (`quadruped`) in the image URLs if they differ.*
 
