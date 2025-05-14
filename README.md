@@ -66,6 +66,7 @@ Open another terminal and run the gesture control file to start controlling the 
 ```bash
 ros2 run spotrobot_control test_joy.py
 ```
+
 ### Gesture Control Logic
 
 The robot is controlled by specific gestures of the user's arms, as follows:
