@@ -84,5 +84,12 @@ ros2 run spotrobot_control test_joy.py
 
 8. [ROS2 Controllers Documentation](https://github.com/ros-controls/ros2_controllers)
 
+### Future Work
+
+To improve the smoothness and consistency of the robot's movements, I plan to enhance the gait control algorithms. By implementing advanced **motion planning**, **trajectory interpolation**, and **path smoothing**, I aim to ensure seamless transitions between gaits and steady movement.
+
+I will also focus on improving **footstep planning** by dynamically adjusting foot placements based on the robot's real-time state, and incorporate **inverse kinematics** and **predictive motion planning** to optimize step trajectories.
+
+Additionally, I will integrate **feedback loops** from onboard sensors to allow real-time adjustments based on environmental conditions, ensuring stable movement across varying terrains.
 
 
