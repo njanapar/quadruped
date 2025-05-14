@@ -66,6 +66,15 @@ Open another terminal and run the gesture control file to start controlling the 
 ```bash
 ros2 run spotrobot_control test_joy.py
 ```
+### Gesture Control Logic
+
+The robot is controlled by specific gestures of the user's arms, as follows:
+
+- **Right hand is up and not bent**: Robot moves **forward**.
+- **Right hand is up and bent**: Robot turns **left**.
+- **Left hand is up and not bent**: Robot moves **backward**.
+- **Left hand is up and bent**: Robot turns **right**.
+
 ## References:
 
 1. M. H. Zafar, E. F. Langås, and F. Sanfilippo, "Real-Time Gesture-Based Control of a Quadruped Robot Using a Stacked Convolutional Bi-Long Short-Term Memory (Bi-LSTM) Neural Network," 2024 10th International Conference on Automation, Robotics and Applications (ICARA), Athens, Greece, 2024, pp. 81-86, doi: [10.1109/ICARA60736.2024.10553163](https://doi.org/10.1109/ICARA60736.2024.10553163).
