@@ -92,4 +92,7 @@ I will also focus on improving **footstep planning** by dynamically adjusting fo
 
 Additionally, I will integrate **feedback loops** from onboard sensors to allow real-time adjustments based on environmental conditions, ensuring stable movement across varying terrains.
 
+### Project Explanation
+
+You can watch the detailed explanation of the project on [YouTube](https://youtu.be/puTWiiMsdBg).
 
